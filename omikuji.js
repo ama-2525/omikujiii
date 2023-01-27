@@ -52,6 +52,11 @@ assessmentButton.onclick = () => {
     //入力フォームを削除し、もう一度引くボタンを表示
     const clear = document.getElementById('top-area');
     clear.style.display="none";
+    const on = document.getElementById('one-more');
+    on.classList.remove('off');
+    on.addEventListener("click", function() {
+        location.replace("/Users/amaaa/Desktop/school/omikujiii/omikuji.html");
+    }, false);
 
     // widget.js の設定
     const script = document.createElement('script');
@@ -81,9 +86,16 @@ function assessment(userName){
         sumOfCharCode = sumOfCharCode + userName.charCodeAt(i)
     }
 
+    ///日付を取得
+    let d = new Date();
+    console.log(d);
+
+    let month = d.getMonth() + 1;
+    let day = d.getDate();
+
     // 文字のコード番号の合計の回答の数で割って添字の数値を求める
-    const index = sumOfCharCode % answers.length
-    const index2 = sumOfCharCode % color.length
+    const index = (sumOfCharCode+(month+day)) % answers.length
+    const index2 = (sumOfCharCode+(month+day)) % color.length
 
     let result = '今日のあなたの運勢は' + answers[index] + '！ラッキーカラーは' + color[index2] + '！';
 

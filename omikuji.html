@@ -14,7 +14,7 @@
           content="N予備校プログラミング入門コースで制作した、「おみくじ」サイトです。">
     <title>神社</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link href="omikuji.css">
+        <link href="omikuji.css" rel="stylesheet">
     </head>
     
 <body>
@@ -36,12 +36,11 @@
         </div>
         </div>
         
-        <img class="off" id="ilust" src=""></img>
+        <img id="ilust" src=""></img>
         
         <div id="result-area"></div>
         <div id="tweet-area" class="mt-3"></div>
-        <button class="input-group-text">もう一度引く</button>
-    </div>
-    <script src="omikuji.js"></script>
+        <button class="off input-group-text mx-auto" id="one-more">もう一度引く</button>
+        <script src="omikuji.js"></script>
 </body>
 </html>
