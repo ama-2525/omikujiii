@@ -49,6 +49,10 @@ assessmentButton.onclick = () => {
 
     tweetDivided.appendChild(anchor);
 
+    //入力フォームを削除し、もう一度引くボタンを表示
+    const clear = document.getElementById('top-area');
+    clear.style.display="none";
+
     // widget.js の設定
     const script = document.createElement('script');
     script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
