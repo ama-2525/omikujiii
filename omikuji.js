@@ -105,6 +105,7 @@ function assessment(userName){
 
     if (index === 0){
         document.getElementById('ilust').src='omikuji_daikichi.png';
+        document.getElementById('daikichi').play();
     } else if (index === 1){
         document.getElementById('ilust').src='omikuji_chuukichi.png';
     } else if (index === 2){
