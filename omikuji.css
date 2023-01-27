@@ -1,3 +1,17 @@
+body{
+    background-color: antiquewhite;
+}
+
+h2{
+    background-color:rgb(175, 145, 123);
+    color: white;
+    font-family: HiraginoSans-W0;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 .off{
     display: none;
 }
