@@ -114,6 +114,7 @@ function assessment(userName){
         document.getElementById('ilust').src='omikuji_kyou.png';
     } else if (index === 4){
         document.getElementById('ilust').src='omikuji_daikyou.png';
+        document.getElementById('daikyou').play();
     }
 
     return result;
