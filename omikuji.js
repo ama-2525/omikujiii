@@ -97,7 +97,8 @@ function assessment(userName){
     const index = (sumOfCharCode+(month+day)) % answers.length
     const index2 = (sumOfCharCode+(month+day)) % color.length
 
-    let result = '今日のあなたの運勢は' + answers[index] + '！ラッキーカラーは' + color[index2] + '！';
+
+    let result = '今日のあなたの運勢は' + answers[index] + '！ラッキーカラーは' + color[index2] + '！'
 
     result = result.replaceAll('{userName}', userName);
 
