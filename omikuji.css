@@ -3,15 +3,20 @@ body{
 }
 
 h2{
-    background-color:rgb(175, 145, 123);
+    background-color:rgb(180, 148, 125);
     color: white;
-    font-family: HiraginoSans-W0;
+    font-family: Tsukushi A Round Gothic;
     margin-left: 90px;
     margin-right: 90px;
     padding: 5px;
     border-radius: 5px;
+    border: solid 2px white;
 }
 
 .off{
     display: none;
+}
+
+.input-button{
+    font-family: Tsukushi A Round Gothic;
 }
