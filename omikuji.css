@@ -6,11 +6,15 @@ h2{
     background-color:rgb(180, 148, 125);
     color: white;
     font-family: Tsukushi A Round Gothic;
-    margin-left: 90px;
-    margin-right: 90px;
-    padding: 5px;
     border-radius: 5px;
     border: solid 2px white;
+    display: inline-block;
+    padding: 5px 13px;
+}
+
+.hako{
+    display: block;
+    margin: auto;
 }
 
 .off{
@@ -33,10 +37,15 @@ h2{
     font-size: 17px;
 }
 
-#one-more{
+#result-area{
+    margin: 10px;
+}
+
+.test{
+    display: inline;
     font-family: Tsukushi A Round Gothic;
 }
 
-#result-area{
-    margin: 10px;
+#one-more{
+    width: 150.16px;
 }
