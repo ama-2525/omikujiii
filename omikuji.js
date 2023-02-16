@@ -37,8 +37,17 @@ assessmentButton.onclick = () => {
   resultDivided.appendChild(headerDivided);
   resultDivided.appendChild(bodyDivided);
 
+  //入力フォームを削除し、もう一度引くボタンを表示
+  const clear = document.getElementById('top-area');
+  clear.style.display="none";
+  const on = document.getElementById('one-more');
+  on.classList.remove('off');
+  on.addEventListener("click", function() {
+      location.replace("/Users/amaaa/Desktop/school/omikujiii/omikuji.html");
+  }, false);
+
     // ツイートエリアの作成
-    /*tweetDivided.innerText = '';
+    tweetDivided.innerText = '';
     const anchor = document.createElement('a');
     const hrefValue ='https://twitter.com/intent/tweet?button_hashtag=' + encodeURIComponent('おみくじ結果') + '&ref_src=twsrc%5Etfw';
 
@@ -47,19 +56,16 @@ assessmentButton.onclick = () => {
     anchor.setAttribute('data-text', result);
     anchor.innerText = 'Tweet #おみくじ結果';
 
-    tweetDivided.appendChild(anchor);*/
+    tweetDivided.appendChild(anchor);
 
-    // ツイートエリア(改)
-    
-
-    //入力フォームを削除し、もう一度引くボタンを表示
-    const clear = document.getElementById('top-area');
-    clear.style.display="none";
-    const on = document.getElementById('one-more');
-    on.classList.remove('off');
-    on.addEventListener("click", function() {
-        location.replace("/Users/amaaa/Desktop/school/omikujiii/omikuji.html");
+    /* ツイートエリア(改)
+    tweetDivided.innerText = '';
+    const anchor = document.createElement('button');
+    anchor.addEventListener("click", function() {
+        location.replace("'https://twitter.com/intent/tweet?button_hashtag=' + encodeURIComponent('おみくじ結果') + '&ref_src=twsrc%5Etfw'");
     }, false);
+
+    anchor.setAttribute('href', hrefValue);*/
 
     // widget.js の設定
     const script = document.createElement('script');
